@@ -1,5 +1,5 @@
 import os
-a = "/Users/luoyuxiu/Desktop/python/Python语言_10_目录及文件操作/Lesson_10_Path/sub"
+a = "/Users/luoyuxiu/Desktop/python/Python语言_10_目录及文件操作/Lesson_10_Path/sub_new"
 for i in range(1,121):
     filename =f"sub{i:03d}"
     os.makedirs(os.path.join(a,filename),exist_ok = True)
