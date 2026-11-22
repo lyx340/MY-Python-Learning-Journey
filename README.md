@@ -1,17 +1,19 @@
-# MY-Python-Learning-Journey
-Python语言第1次平时作业——我的第一个GitHub仓库\
-任务要求：\
-1)在GitHub上注册一个账户；\
-2)创建一个新的仓库，命名为 My-Python-Learning-Journey；  
-3)选择本学期自己编写的1-2个Python程序（可以是课堂练习写的程序），使用Git命令或GitHub Desktop上传 .py 或 .ipynb源代码文件。程序长短不限，但须功能明确、代码完整；
-上传前检查代码是否完整，不上传个人敏感信息或无关文件。
+# My-Python-Learning-Journey
 
-作业提交需要：word电子版文件，命名为“学号_姓名_Python平时作业01.docx”   
-1)GitHub 仓库链接（请确保链接可访问，建议设为公开仓库）；  
-2)仓库页面截图1张：应能看清仓库名称与源代码文件列表；  
-3)Git 或GitHub Desktop截图1张：应能看清本仓库的两次代码提交记录及提交说明，并与GitHub上的记录对应；  
-4)每个程序的运行结果截图。  
+## 项目简介
+本仓库用于存放我的 Python 课堂练习代码，练习基础语法、数据处理以及文件目录操作，记录学习过程，方便复盘和展示学习成果。
 
-评分标准\
-1)GitHub仓库设置与技术操作 (80分)\
-2)代码质量与作业提交 (20分)
+## 文件说明
+- **dataFrame_01.py**：使用 pandas 构建 DataFrame，实现二维表格数据的创建与输出。
+- **new.py**：调用 os 模块，批量自动创建子文件夹，练习文件路径操作。
+
+## 代码说明
+```python
+# dataFrame_01.py
+import pandas as pd
+data = [[110,105,99],[105,88,106],[98,112,103]]
+index = [0,1,2]
+columns = ['语文','数学','英语']
+df = pd.DataFrame(data=data, index=index, columns=columns)
+print(df)
+
